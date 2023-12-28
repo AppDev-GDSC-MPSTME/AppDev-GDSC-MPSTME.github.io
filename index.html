@@ -1,73 +1,375 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('flutter_service_worker.js?v=2626909439')
-      .then((registration) => {
-        // Registration was successful
-        console.log('ServiceWorker registration successful with scope:', registration.scope);
-      })
-      .catch((error) => {
-        // Registration failed
-        console.error('ServiceWorker registration failed:', error);
-      });
-  }
-</script>
 
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
+    <title>GDSC Team Application Development</title>
 
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
 
+    <link rel="stylesheet" href="assets/css/main.css">
 
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="floorplan">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>floorplan</title>
-  <link rel="manifest" href="manifest.json">
-
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "2626909439";
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
 </head>
+
 <body>
-  <script>
-    window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
-          });
-        }
-      });
-    });
-  </script>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo"><img src="assets/images/GDSC.png" style="width: 2em;"/> App<em> Dev</em></a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about">About</a></li>
+                            <li class="scroll-to-section"><a href="#projects">Projects</a></li>
+                            <li class="scroll-to-section"><a href="#team">Team</a></li>
+                            <li class="main-button"><a href="https://bit.ly/MPSTME_OnTrack">MPSTME Ontrack</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner" id="top">
+        <video autoplay muted loop id="bg-video">
+            <source src="assets/images/bg.mp4" type="video/mp4" />
+        </video>
+
+        <div class="video-overlay header-text">
+            <div class="caption">
+                <h6>Create to <span style="color: #ed563b;">innovate</span></h6>
+                <h2>Building next-gen <em>Solutions</em></h2>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h2>About <em>Us</em></h2>
+                        <img src="assets/images/line-dec.png" alt="waves">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 py-3">
+                                <img src="assets/images/mobile.svg" alt="First One" style="width: 75%; margin-bottom: 2rem;">
+                            </div>
+                            <div class="col-md-6">
+                                Application Development is a team under Google Developer Students Club of Mukesh Patel School of Technology Managment and Engineering, Mumbai. We craft innovative digital solutions with expertise. In our next generation environment, we specialize in leveraging technologies like Flutter and Unity to bring applications to fruition. We belive that each line of code deserves applause and code efficient mobile-friendly applications.
+                                <br/><br/>
+                                <em>We have recently come out with an application to navigate through the campus of MPSTME Mumbai</em>
+                                <br/><br/><br/>
+                                <div class="main-button scroll-to-section">
+                                    <a href="https://bit.ly/MPSTME_OnTrack">Check out MPSTME OnTrack</a>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+        <!-- ***** Features Item Start ***** -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3">
+                        <div class="section-heading">
+                            <h2>Our <em>Projects</em></h2>
+                            <img src="assets/images/line-dec.png" alt="waves">
+                            <!-- <p>Training Studio is free CSS template for gyms and fitness centers. You are allowed to use this layout for your business website.</p> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 py-3">
+                                    <div class="row">
+                                        <div class="col-md-3 text-center">
+                                            <img src="assets/images/OnTrack.svg" alt="First One" style="width: 100%; margin-bottom: 2rem;">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <h4 class="product-header">MPSTME OnTrack</h4>
+                                            <p>MPSTME OnTrack allows a user to store their schedule with their class details. It has
+                                                inbuilt features such as floor plans and class highlighting to easily navigate
+                                                through the campus with pre-lecture notifications (only Android) to make sure you
+                                                reach before time. </p>
+                                            <a href="#" class="project-view">View Project</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 py-3">
+                                    <div class="row">
+                                        <div class="col-md-3 text-center">
+                                            <img src="assets/images/G-Coin.png" alt="First One" style="width: 100%; margin-bottom: 2rem;">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <h4 class="product-header">G-Coin Collect</h4>
+                                            <p>A game built to play a coin collector infinite runner game using body posture tilt. </p>
+                                            <a href="#" class="project-view" style="color: gray;">Project not deployed</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- ***** Features Item End ***** -->
+    <!-- ***** Call to Action Start ***** -->
+    <section class="section" id="call-to-action">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="cta-content">
+                            <h2>Have a <em>next-gen</em> idea? Let us <em>know</em>!</h2>
+                            <p>We're always seeking innovative ideas. Share your next-gen concept with us via email!</p>
+                            <div class="main-button scroll-to-section">
+                                <a href="mailto:gdscmpstmemumbaiappdev@gmail.com">Email Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Call to Action End ***** -->
+
+    <!-- ***** Testimonials Starts ***** -->
+    <section class="section" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h2>Our <em>Team</em></h2>
+                        <img src="assets/images/line-dec.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 p-3">
+                    <div class="trainer-item h-100">
+                        <div class="image-thumb">
+                            <img src="assets/images/Ayushya.jpeg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <span>Secretary of Operations</span>
+                            <h4>Ayushya Shah</h4>
+                            <p>A seasoned technology professional with expertise across diverse domains, including Cyber Security, Web Development, and UI/UX, among others.</p>
+                            <ul class="social-icons">
+                                <li><a href="https://github.com/A-Y-U-S-H-Y-A"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/ayushya-shah/"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-3">
+                    <div class="trainer-item h-full">
+                        <div class="image-thumb">
+                            <img src="assets/images/Siddh.jpg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <span>HoD - Application Development</span>
+                            <h4>Siddh Purohit</h4>
+                            <p>Seasoned Flutter developer with expertise in Unity, Python, and blockchain technologies, offering a diverse skill set across software development and user-focused solutions.</p>
+                            <ul class="social-icons">
+                                <li><a href="https://github.com/SiddhPurohit"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/siddh-purohit-1872a122a/"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-3">
+                    <div class="trainer-item h-100">
+                        <div class="image-thumb">
+                            <img src="assets/images/Aditya.jpg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <span>Executive - Application Development</span>
+                            <h4>Aditya Negi</h4>
+                            <p>Quick learner, hardware enthusiast and android stan. Base of flutter/ Java development and whatever the world throws at me.</p>
+                            <ul class="social-icons">
+                                <li><a href="https://github.com/bmage95"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/aditya-negi-9a12a2223"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-3">
+                    <div class="trainer-item h-100">
+                        <div class="image-thumb">
+                            <img src="assets/images/Jugaad.jpg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <span>Executive - Application Development</span>
+                            <h4>Jugaad Chhabra</h4>
+                            <p>Develop mobile games on Unity as a hobby, can get by as an HTML5 game dev on a good day, and love exploring new Web3 tech.</p>
+                            <ul class="social-icons">
+                                <li><a href="https://github.com/JugaadChhabra"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/jugaad-chhabra-1a533a241"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-3">
+                    <div class="trainer-item h-100">
+                        <div class="image-thumb">
+                            <img src="assets/images/Manan.jpg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <span>Executive - Application Development</span>
+                            <h4>Manan Gandhi</h4>
+                            <p>A web and mobile development enthusiast, proficient in Dart, Python, Kotlin and Javascript.</p>
+                            <ul class="social-icons">
+                                <li><a href="https://github.com/MananGandhi1810"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://in.linkedin.com/in/manangandhi1810"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-3">
+                    <div class="trainer-item h-100">
+                        <div class="image-thumb">
+                            <img src="assets/images/Shrijesh.jpg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <span>Executive - Application Development</span>
+                            <h4>Shrijesh Yadav</h4>
+                            <p>Android Studio and Python pro, I am diving into web development, always hungry for new tech challenges.</p>
+                            <ul class="social-icons">
+                                <li><a href="https://github.com/shreejesh12"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/shrijesh-yadav-77ab67252/"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-3">
+                    <div class="trainer-item h-100">
+                        <div class="image-thumb">
+                            <img src="assets/images/Tanmay.png" alt="">
+                        </div>
+                        <div class="down-content">
+                            <span>Executive - Application Development</span>
+                            <h4>Tanmay Thakkar</h4>
+                            <p>I love to make Android apps and explore my domains. Game development is next on the scope, along with Blender for models. I love to discuss ideas always.</p>
+                            <ul class="social-icons">
+                                <li><a href="https://github.com/BaronCandy"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/tanmay-thakar-3736292a6"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-3">
+                    <div class="trainer-item h-100">
+                        <div class="image-thumb">
+                            <img src="assets/images/Vignesh.jpeg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <span>Executive - Application Development</span>
+                            <h4>Vignesh Baiju</h4>
+                            <p>Experienced in Flutter and Python, excelling in both mobile and web development. Versatile in web development and committed to continual learning for skill refinement.</p>
+                            <ul class="social-icons">
+                                <li><a href="https://github.com/ViggCodez"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/vignesh-baiju-21052003vb"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+    <!-- ***** Testimonials Ends ***** -->
+
+
+
+
+
+
+    
+
+
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Made with ❤ by Team Application Development</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+    <script src="assets/js/mixitup.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
 </body>
+
 </html>
